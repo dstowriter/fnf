@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Steller landing page.">
+    <meta name="author" content="Devcrud">
+    <title>filter no filter</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Steller main styles -->
+	<link rel="stylesheet" href="assets/css/steller.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/imgs/fnf-logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">기획의도</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-primary ml-3" href="#portfolio">관람하기</a>
+                    </li>
+                </ul>
+            </div>
+        </div>          
+    </nav>
+    <!-- End of page navibation -->
+
+    <!-- Page Header -->
+    <header class="header" id="home">
+        <div class="container">
+            <div class="infos">
+                <h6 class="title">필터 노 필터</h6>
+                <div class="buttons pt-3">
+                    <a href="https://open.kakao.com/o/sYC8pdzf"><button class="btn btn-dark rounded">문의하기</button></a>
+                </div>      
+                <div class="socials mt-4">
+                    <a class="social-item" href="https://www.instagram.com/filter_no.filter/"><i class="ti-instagram"></i></a>
+                </div>
+            </div>              
+            <div class="img-holder">
+                <img src="assets/imgs/fnf.png" alt="">
+            </div>      
+        </div>  
+
+    </header>
+    <!-- End of Page Header -->
+    
+    <!-- About section -->
+    <section id="about" class="section mt-3">
+        <div class="container mt-5">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3">
+                    <img src="assets/imgs/fnf.png" alt="" class="img-thumbnail mb-4">
+                </div>
+                <div class="pl-md-4 col-md-9">
+                    <h6 class="title">필터 노 필터</h6>
+                    <p class="subtitle">filter no filter / フィルター ノーフィルター</p>
+                    <p>식물의 건강 상태를 파악할 수 있는 이미지 처리 방법을 차용.
+                    <br>바닥에서 들어 올리거나 버튼을 누르는 행동으로 사진을 찍는다. 사진은 합성 후, 인스타그램 계정에 실시간으로 업로드 된다.</p>
+                    <p>인간을 대상으로 하지 않는 이미지 처리 방법으로 세상을 기록하며 실재하는 정보란 무엇인지 생각하는 계기를 갖는다.</p>              
+                    <p>존재하는 정보를 이미지화한 것뿐이니 원형의 이미지일까,<br>파란색 필터를 씌우고 일반적인 '사진'의 데이터를 별도로 처리하여 만들어 냈으니 필터가 들어간 이미지일까.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- insta section -->
+    <section id="portfolio" class="section black-text">
+        <div class="container text-center">
+            <h6 class="section-title mb-4"><a href="https://www.instagram.com/filter_no.filter/">@filter_no.filter</a></h6>
+            <p class="mb-5 pb-4">장치를 통해 실시간으로 인스타그램에 업로드되는 이미지입니다.<br>시간차가 있을 수 있어 빠른 확인은 인스타그램 계정을 이용해 주세요.</p>
+
+
+            <ul id="gallery"></ul>
+            <script src="instafeed.min.js"></script>
+
+
+        </div>
+    </section>
+    <!-- End of portfolio section -->
+
+    <!-- Page Footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <p>Copyright <script>document.write(new Date().getFullYear())</script> &copy; 異玄</p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="socials">
+                        <a class="social-item" href="https://www.instagram.com/filter_no.filter/"><i class="ti-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> 
+    <!-- End of page footer -->
+	
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- steller js -->
+    <script src="assets/js/steller.js"></script>
+
+    <!-- instagram -->
+    <script>
+        var feed = new Instafeed({
+            target: 'gallery',
+            template: '<li><a href="{{link}}"><img title="{{caption}}" src="{{image}}"/></a></li>',
+            accessToken: 'IGAAgZC5ZCGstv1BZAGFxSWFwYWdGdkFMNkt3WVF2SW1FWWhlQUt5VlYxd05WN0NGOTFfWnRCdGdrdl9tR3UxRjVvTFVKSjByZAmlOVDBMSFh1b241VTFGa0VneXNlT2xyMi1HRFYtMi1VbnJXX1o5ZAGxxMFhWS0psRXpYSW9SeWVQZAwZDZD'
+        });
+        feed.run();
+    </script>
+
+</body>
+</html>
